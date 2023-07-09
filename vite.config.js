@@ -4,14 +4,8 @@ import react from "@vitejs/plugin-react-swc";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/",
+  base: "https://ElNuVaTo.github.io/Portafolio",
   server: {
     host: "0.0.0.0",
-  },
-  build: {
-    outDir: "build",
-  },
-  esbuild: {
-    jsxInject: true,
   },
 });
