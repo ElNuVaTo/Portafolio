@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import ProyectosJSON from "../../utils/Proyectos.json";
+import ProyectosJSON from "../../utils/Proyectos";
 import MapRenderProyecto from "./MapRenderProyecto";
 
 const Main = styled.div``;

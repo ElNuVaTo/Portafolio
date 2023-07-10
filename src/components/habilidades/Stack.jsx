@@ -1,6 +1,17 @@
 import styled from "styled-components";
 import MapRenderImagen from "./MapRenderImagen";
 
+import Css from "../../assets/icons/progamacion/Css.svg";
+import Html from "../../assets/icons/progamacion/Html.svg";
+import Js from "../../assets/icons/progamacion/JavaScript.svg";
+
+import React from "../../assets/icons/progamacion/React.svg";
+import NextJS from "../../assets/icons/progamacion/NextJS.svg";
+import Git from "../../assets/icons/progamacion/Git.svg";
+
+import TypeScript from "../../assets/icons/progamacion/TypeScript.svg";
+import Figma from "../../assets/icons/progamacion/Figma.svg";
+
 const Contenedor = styled.section``;
 const Habilidades = styled.div`
   display: flex;
@@ -21,20 +32,9 @@ const Habilidades = styled.div`
 `;
 
 const Stack = () => {
-  const Fundamental = [
-    "/icons/progamacion/Css.svg",
-    "/icons/progamacion/Html.svg",
-    "/icons/progamacion/JavaScript.svg",
-  ];
-  const Adquirido = [
-    "/icons/progamacion/React.svg",
-    "/icons/progamacion/NextJS.svg",
-    "/icons/progamacion/Git.svg",
-  ];
-  const Aprendiendo = [
-    "/icons/progamacion/TypeScript.svg",
-    "/icons/progamacion/Figma.svg",
-  ];
+  const Fundamental = [Css, Html, Js];
+  const Adquirido = [React, NextJS, Git];
+  const Aprendiendo = [TypeScript, Figma];
 
   return (
     <>

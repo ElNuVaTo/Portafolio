@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+import Telefono from "../../assets/icons/Telefono.svg";
+import Email from "../../assets/icons/Email.svg";
+import Linkedin from "../../assets/icons/Linkedin.svg";
+import GitHub from "../../assets/icons/GitHub.svg";
+
 const Contenedor = styled.div``;
 const Contenedor_Contacto = styled.div`
   display: flex;
@@ -31,7 +36,6 @@ const Data = styled.div`
     height: 30px;
   }
 `;
-
 const DataLink = styled.a`
   display: flex;
   background-color: var(--Secundario);
@@ -75,22 +79,22 @@ const Contacto = () => {
         <Contenedor_Contacto>
           <Div>
             <Data>
-              <img src="/icons/Telefono.svg" alt="" />
+              <img src={Telefono} alt="" />
               <p>+56 9 7823 4940</p>
             </Data>
 
             <Data>
-              <img src="/icons/Email.svg" alt="" />
+              <img src={Email} alt="" />
               <p>angelo.a.developer@gmail.com</p>
             </Data>
           </Div>
 
           <Contenedor_Iconos>
             <DataLink href="https://www.linkedin.com/in/front-end-angelo/">
-              <img src="icons/Linkedin.svg" alt="" />
+              <img src={Linkedin} alt="" />
             </DataLink>
             <DataLink href="https://github.com/ElNuVaTo">
-              <img src="icons/GitHub.svg" alt="" />
+              <img src={GitHub} alt="" />
             </DataLink>
           </Contenedor_Iconos>
         </Contenedor_Contacto>

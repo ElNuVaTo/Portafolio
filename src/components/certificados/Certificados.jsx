@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 import MapRenderCertificado from "./MapRenderCertificado";
 
+import MetaPDF from '../../assets/pdfs/Meta.pdf'
+import MetaJPG from '../../assets/photos/MetaFront-End.jpg'
+import DefaultPNG from '../../assets/photos/Default.png'
+
 const Contenedor = styled.div`
   display: grid;
   width: 95%;
@@ -21,18 +25,18 @@ const Certificados = () => {
       <Contenedor>
         <MapRenderCertificado
           name="Meta Front-End Developer"
-          src="/photos/MetaFront-End.jpg"
-          href="/pdfs/Meta.pdf"
+          src={MetaJPG}
+          href={MetaPDF}
         />
 
         <MapRenderCertificado
           name="Full Stack MERN"
-          src="/photos/Default.png"
+          src={DefaultPNG}
           href=""
         />
         <MapRenderCertificado
           name="React Avanzado"
-          src="/photos/Default.png"
+          src={DefaultPNG}
           href=""
         />
       </Contenedor>

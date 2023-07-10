@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import ProfileIMG from '../../assets/photos/ProfileGitHub.jpg'
+
 const Contenedor = styled.section`
   display: flex;
   flex-direction: column;
@@ -78,7 +80,7 @@ const Sobre = () => {
       <Contenedor>
         <Perfil>
           <Imagen>
-            <img src="/photos/ProfileGitHub.jpg" alt="" />
+            <img src={ProfileIMG} alt="" />
           </Imagen>
           <Contenedor_Data_Historia>
             <Data>
