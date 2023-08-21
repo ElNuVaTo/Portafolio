@@ -1,6 +1,6 @@
 [
   {
-    "src": "/ProfileGitHub.jpg",
+    "src": "http://localhost:5173/Portafolio/public/ProfileGitHub.jpg",
     "nombre": "Angelo Amaro Alcaino Veloso",
     "puesto": "Desarrollador FullStack",
     "desc": "Me destaco por ser una persona colaborativa y tranquila, capaz de trabajar en armonía con mis compañeros sin generar conflictos. Soy autocrítico y constantemente reflexiono sobre mis acciones, buscando siempre hacer lo mejor posible. Estoy abierto a nuevas ideas y siempre considero si hay mejores formas de mejorar mi trabajo."
