@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
-import ProfileIMG from '../../assets/photos/ProfileGitHub.jpg'
+import SobreMiJSON from "../../utils/json/SobreMi.json";
 
-const Contenedor = styled.section`
+const Main = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 100px 0;
+  padding: 50px 0;
   ::after {
     content: "";
     position: absolute;
@@ -19,22 +19,20 @@ const Contenedor = styled.section`
     background-color: var(--Principal);
   }
 `;
-
+const Contenedor = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
 const Perfil = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 15px 10px;
   margin: auto;
+  padding: 8px 10px;
   width: 90%;
-  max-width: 630px;
-  border-radius: 2px;
+  max-width: 600px;
+  border-radius: 5px;
   background-color: var(--Secundario);
-  gap: 5px 10px;
-
-  @media (min-width: 450px) {
-    flex-direction: row;
-    padding: 25px 15px;
-  }
 `;
 const Imagen = styled.div`
   border-radius: 50%;
@@ -49,6 +47,20 @@ const Imagen = styled.div`
     border-radius: 50%;
   }
 `;
+const FondoStyled = styled.div`
+  padding-top: 15px;
+  position: relative;
+  width: 100%;
+  ::after {
+    content: "";
+    position: absolute;
+    height: 50%;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    background-color: var(--Principal);
+  }
+`;
 const Contenedor_Data_Historia = styled.div`
   display: flex;
   flex-direction: column;
@@ -58,18 +70,18 @@ const Data = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
   b {
     color: black;
   }
-  em {
-    color: #1e1e1e;
-    font-size: 15px;
+  p {
+    color: #464646;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 `;
 const Historia = styled.div`
   p {
-    color: #5a5a5a;
+    color: #2d2d2d;
     font-size: 15.5px;
   }
 `;
@@ -77,30 +89,29 @@ const Historia = styled.div`
 const Sobre = () => {
   return (
     <>
-      <Contenedor>
-        <Perfil>
-          <Imagen>
-            <img src={ProfileIMG} alt="" />
-          </Imagen>
-          <Contenedor_Data_Historia>
-            <Data>
-              <b>Angelo Amaro Alcaino Veloso</b>
+      <Main>
+        {SobreMiJSON.map((item) => (
+          <Contenedor key={item.name}>
+            <Imagen>
+              <img src={item.src} alt="" />
+            </Imagen>
+            <FondoStyled>
+              <Perfil key={item.nombre}>
+                <Contenedor_Data_Historia>
+                  <Data>
+                    <b>{item.nombre}</b>
 
-              <em>Desarrollador Frontend</em>
-            </Data>
-            <Historia>
-              <p>
-                Me destaco por ser una persona colaborativa y tranquila, capaz
-                de trabajar en armonía con mis compañeros sin generar
-                conflictos. Soy autocrítico y constantemente reflexiono sobre
-                mis acciones, buscando siempre hacer lo mejor posible. Estoy
-                abierto a nuevas ideas y siempre considero si hay mejores formas
-                de mejorar mi trabajo.
-              </p>
-            </Historia>
-          </Contenedor_Data_Historia>
-        </Perfil>
-      </Contenedor>
+                    <p>{item.puesto}</p>
+                  </Data>
+                  <Historia>
+                    <p>{item.desc}</p>
+                  </Historia>
+                </Contenedor_Data_Historia>
+              </Perfil>
+            </FondoStyled>
+          </Contenedor>
+        ))}
+      </Main>
     </>
   );
 };

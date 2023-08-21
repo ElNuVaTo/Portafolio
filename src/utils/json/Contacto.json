@@ -1,0 +1,22 @@
+[
+  {
+    "src": "/public/icons/Telefono.svg",
+    "data": "+56 9 7823 4940",
+    "href": ""
+  },
+  {
+    "src": "/public/icons/Email.svg",
+    "data": "angelo.a.developer@gmail.com",
+    "href": ""
+  },
+  {
+    "src": "/public/icons/Linkedin.svg",
+    "data": "linkedin.com/in/front-end-angelo/",
+    "href": "https://www.linkedin.com/in/front-end-angelo/"
+  },
+  {
+    "src": "/public/icons/GitHub.svg",
+    "data": "github.com/ElNuVaTo",
+    "href": "https://github.com/ElNuVaTo"
+  }
+]

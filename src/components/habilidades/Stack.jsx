@@ -1,52 +1,40 @@
 import styled from "styled-components";
-import MapRenderImagen from "./MapRenderImagen";
 
-import Css from "../../assets/icons/progamacion/Css.svg";
-import Html from "../../assets/icons/progamacion/Html.svg";
-import Js from "../../assets/icons/progamacion/JavaScript.svg";
+import ImageHabilidad from "./ImageHabilidad";
+import TituloSection from "../../utils/TituloSection";
+import HabilidadesJSON from "../../utils/json/Habilidades.json";
 
-import React from "../../assets/icons/progamacion/React.svg";
-import NextJS from "../../assets/icons/progamacion/NextJS.svg";
-import Git from "../../assets/icons/progamacion/Git.svg";
-
-import TypeScript from "../../assets/icons/progamacion/TypeScript.svg";
-import Figma from "../../assets/icons/progamacion/Figma.svg";
-
-const Contenedor = styled.section``;
-const Habilidades = styled.div`
+const Main = styled.section`
   display: flex;
   flex-direction: column;
+  width: 95%;
+  max-width: 1300px;
+  margin: auto;
+`;
+const Habilidades = styled.div`
+  display: flex;
   justify-content: center;
-  margin: 0 auto 100px auto;
-  gap: 25px 0;
-  width: 75%;
-  max-width: 850px;
-  border-radius: 2px;
-  padding: 25px 0;
-  background-color: var(--Secundario);
-  @media (min-width: 450px) {
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 25px 15px;
-  }
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px auto;
+  gap: 25px;
 `;
 
 const Stack = () => {
-  const Fundamental = [Css, Html, Js];
-  const Adquirido = [React, NextJS, Git];
-  const Aprendiendo = [TypeScript, Figma];
-
   return (
     <>
-      <Contenedor>
+      <Main>
+        <TituloSection titulo="Habilidades" />
         <Habilidades>
-          <MapRenderImagen titulo="Fundamental" stackMap={Fundamental} />
-
-          <MapRenderImagen titulo="Adquirido" stackMap={Adquirido} />
-
-          <MapRenderImagen titulo="En proceso..." stackMap={Aprendiendo} />
+          {HabilidadesJSON.map((item) => (
+            <ImageHabilidad
+              key={item.name}
+              name={item.name}
+              skills={item.skills}
+            />
+          ))}
         </Habilidades>
-      </Contenedor>
+      </Main>
     </>
   );
 };

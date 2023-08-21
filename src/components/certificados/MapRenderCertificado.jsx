@@ -1,27 +1,34 @@
 import styled from "styled-components";
 
+import EnlaceExterno from "../../assets/icons/Link_Externo.svg";
+
 const Contenedor = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 95%;
-  max-width: 300px;
-  background-color: var(--Secundario);
-  margin: auto;
-  border-radius: 2px;
+  position: relative;
   overflow: hidden;
+  margin: auto;
+  background-color: var(--Secundario);
+  width: 95%;
+  max-width: 600px;
+  min-height: 165px;
+  border-radius: 5px;
+  padding: 15px 10px;
   gap: 10px;
-  padding-bottom: 10px;
-`;
-const Imagen = styled.a`
-  display: flex;
-  width: 100%;
-  height: 220px;
 
+  p {
+    color: black;
+    font-size: 15px;
+  }
+`;
+const Enlace = styled.a`
+  position: absolute;
+  top: 8px;
+  right: 8px;
   img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 20px;
+    height: 20px;
   }
 `;
 const Nombre = styled.b`
@@ -29,15 +36,17 @@ const Nombre = styled.b`
   font-size: 15.5px;
 `;
 
-const MapRenderCertificado = ({ src, name, href }) => {
+const MapRenderCertificado = ({  name, href, desc }) => {
   return (
     <>
       <Contenedor>
-        <Imagen href={href} target="_blank">
-          <img src={src} draggable={false} />
-        </Imagen>
+        <Enlace href={href} target="_blank">
+          <img src={EnlaceExterno} draggable={false} />
+        </Enlace>
 
         <Nombre>{name}</Nombre>
+
+        <p>{desc}</p>
       </Contenedor>
     </>
   );

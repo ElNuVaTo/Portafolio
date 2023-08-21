@@ -8,9 +8,9 @@ const Inicio = () => {
   return (
     <>
       <Sobre />
-      <Stack />
       <Proyectos />
       <Certificados />
+      <Stack />
       <Contacto />
     </>
   );

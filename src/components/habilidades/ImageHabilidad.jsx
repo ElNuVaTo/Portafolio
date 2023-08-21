@@ -5,7 +5,13 @@ const Contenedor = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  align-content: center;
+  flex-wrap: nowrap;
+  background-color: #d3e2fa;
+  width: 370px;
+  height: 80px;
+  gap: 10;
+  border-radius: 5px;
   b {
     color: black;
   }
@@ -25,13 +31,13 @@ const Image = styled.div`
   }
 `;
 
-const MapRenderImagen = ({ titulo, stackMap }) => {
+const ImageHabilidad = ({ name, skills }) => {
   return (
     <>
       <Contenedor>
-        <b>{titulo}</b>
+        <b>{name}</b>
         <Contenedor_Image>
-          {stackMap.map((item, key) => (
+          {skills.map((item, key) => (
             <Image key={key}>
               <img src={item} alt="" />
             </Image>
@@ -42,4 +48,4 @@ const MapRenderImagen = ({ titulo, stackMap }) => {
   );
 };
 
-export default MapRenderImagen;
+export default ImageHabilidad;

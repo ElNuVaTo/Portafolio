@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Fundamental",
+    "skills": [
+      "/progamacion/Html.svg",
+      "/progamacion/Css.svg",
+      "/progamacion/JavaScript.svg",
+      "/progamacion/Git.svg"
+    ]
+  },
+  {
+    "name": "Dominado",
+    "skills": [
+      "/progamacion/React.svg"
+    ]
+  },
+  {
+    "name": "Aprendiendo…",
+    "skills": [
+      "/progamacion/Figma.svg",
+      "/progamacion/TypeScript.svg"
+    ]
+  }
+]

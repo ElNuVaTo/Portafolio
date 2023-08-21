@@ -1,16 +1,21 @@
 import styled from "styled-components";
 
+import CertificadosJSON from "../../utils/json/Certificados.json";
 import MapRenderCertificado from "./MapRenderCertificado";
+import TituloSection from "../../utils/TituloSection";
 
-import MetaPDF from '../../assets/pdfs/Meta.pdf'
-import MetaJPG from '../../assets/photos/MetaFront-End.jpg'
-import DefaultPNG from '../../assets/photos/Default.png'
-
+const Main = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 1300px;
+  margin: auto;
+`;
 const Contenedor = styled.div`
   display: grid;
-  width: 95%;
+  width: 100%;
   margin: 20px auto;
-  gap: 50px 0;
+  gap: 25px 0;
   grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 `;
@@ -18,28 +23,21 @@ const Contenedor = styled.div`
 const Certificados = () => {
   return (
     <>
-      <div className="SubTitulo">
-        <h2>Certificados</h2>
-      </div>
+      <Main>
+        <TituloSection titulo="Certificados" />
 
-      <Contenedor>
-        <MapRenderCertificado
-          name="Meta Front-End Developer"
-          src={MetaJPG}
-          href={MetaPDF}
-        />
-
-        <MapRenderCertificado
-          name="Full Stack MERN"
-          src={DefaultPNG}
-          href=""
-        />
-        <MapRenderCertificado
-          name="React Avanzado"
-          src={DefaultPNG}
-          href=""
-        />
-      </Contenedor>
+        <Contenedor>
+          {CertificadosJSON.map((item) => (
+            <>
+              <MapRenderCertificado
+                name={item.name}
+                href={item.href}
+                desc={item.desc}
+              />
+            </>
+          ))}
+        </Contenedor>
+      </Main>
     </>
   );
 };
