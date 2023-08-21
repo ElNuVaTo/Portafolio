@@ -1,7 +1,7 @@
 [
   {
     "name": "Sense",
-    "src": "/Sense.jpeg",
+    "src": "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/proyectos/Sense.jpeg",
     "href": "https://github.com/ElNuVaTo/Sense",
     "skills": [
       "Solitario",
@@ -14,7 +14,7 @@
   },
   {
     "name": "Pet Unite",
-    "src": "/Pet Unite.jpg",
+    "src": "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/proyectos/Pet+Unite.jpg",
     "href": "https://github.com/orgs/Pet-Unite/repositories",
     "skills": [
       "Grupal",
@@ -27,7 +27,7 @@
   },
   {
     "name": "Little Lemon",
-    "src": "/LittleLemon.jpg",
+    "src": "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/proyectos/LittleLemon.jpg",
     "href": "https://github.com/ElNuVaTo/Little-Lemon",
     "skills": [
       "Solitario",
@@ -37,7 +37,7 @@
   },
   {
     "name": "BonPland",
-    "src": "/NoPicture.png",
+    "src": "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/proyectos/NoPicture.png",
     "href": "https://github.com/orgs/Dev-Hive-DH/repositories",
     "skills": [
       "Grupal",

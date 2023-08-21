@@ -2,23 +2,24 @@
   {
     "name": "Fundamental",
     "skills": [
-      "/progamacion/Html.svg",
-      "/progamacion/Css.svg",
-      "/progamacion/JavaScript.svg",
-      "/progamacion/Git.svg"
+      "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/Html.svg",
+      "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/Css.svg",
+      "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/JavaScript.svg",
+      "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/Git.svg"
     ]
   },
   {
     "name": "Dominado",
     "skills": [
-      "/progamacion/React.svg"
+      "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/React.svg"
+      "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/NextJS.svg"
     ]
   },
   {
     "name": "Aprendiendo…",
     "skills": [
-      "/progamacion/Figma.svg",
-      "/progamacion/TypeScript.svg"
+      "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/Figma.svg",
+      "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/TypeScript.svg"
     ]
   }
 ]
