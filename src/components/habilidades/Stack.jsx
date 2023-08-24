@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 import ImageHabilidad from "./ImageHabilidad";
-import TituloSection from "../../utils/TituloSection";
 import HabilidadesJSON from "../../utils/json/Habilidades.json";
 
 const Main = styled.section`
