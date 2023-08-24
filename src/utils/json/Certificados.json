@@ -1,17 +1,20 @@
 [
   {
-    "name": "Desarrollador FullStack MERN",
+    "name": "Desarrollador MERN",
     "href": "https://app.diplomasafe.com/es-ES/diploma/dcf62f1056fa862639dd0196f9114ba2fe7ee96af",
-    "desc": "Adquirí habilidades en Git, trabajo en equipo con Trello, y dominé tecnologías como React, MongoDB, Express y Node.js. Estuve presente activamente en clases para una mejor comprensión."
+    "desc": "Adquirí habilidades en Git, trabajo en equipo con Trello, y dominé tecnologías como React, MongoDB, Express y Node.js. Estuve presente activamente en clases para una mejor comprensión.",
+    "fecha": "02/07/2023"
   },
   {
     "name": "Meta Front-End Developer",
     "href": "https://www.coursera.org/account/accomplishments/professional-cert/QSSVTP8ZREX5",
-    "desc": "A través del autoaprendizaje, exploré variados temas, incluido UI/UX, mediante proyectos personales y el material proporcionado."
+    "desc": "A través del autoaprendizaje, exploré variados temas, incluido UI/UX, mediante proyectos personales y el material proporcionado.",
+    "fecha": "15/04/2023"
   },
   {
     "name": "Scrum esencial",
     "href": "https://www.linkedin.com/learning/certificates/c8ff1f4c607b14a1146d84494a127ccea7c18bb7effadd24e8e4817d98ab9edd",
-    "desc": "Aprendí los valores fundamentales de la metodología ágil Scrum, resaltando la responsabilidad individual. comprendí situaciones con ejemplos y roles de equipo en profundidad."
+    "desc": "Aprendí los valores fundamentales de la metodología ágil Scrum, resaltando la responsabilidad individual. comprendí situaciones con ejemplos y roles de equipo en profundidad.",
+    "fecha": "13/08/2023"
   }
 ]

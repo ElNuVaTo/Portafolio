@@ -5,6 +5,7 @@ const Titulo = styled.h2`
   width: max-content;
   padding: 6px 80px 6px 0;
   font-size: 26px;
+  color: white;
   ::after {
     content: "";
     position: absolute;

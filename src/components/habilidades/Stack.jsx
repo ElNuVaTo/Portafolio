@@ -7,8 +7,8 @@ import HabilidadesJSON from "../../utils/json/Habilidades.json";
 const Main = styled.section`
   display: flex;
   flex-direction: column;
-  width: 95%;
-  max-width: 1300px;
+  width: 100%;
+  padding: 0  3%;
   margin: auto;
 `;
 const Habilidades = styled.div`
@@ -16,15 +16,14 @@ const Habilidades = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  margin: 20px auto;
-  gap: 25px;
+  gap: 50px;
+  margin: 50px auto 150px auto;
 `;
 
 const Stack = () => {
   return (
     <>
       <Main>
-        <TituloSection titulo="Habilidades" />
         <Habilidades>
           {HabilidadesJSON.map((item) => (
             <ImageHabilidad

@@ -353,7 +353,7 @@ template {
 /* Estilos personalizados */
 
 :root {
-  --Borde: #353661;
+  --Borde: #0800ff;
   --Principal: #242541;
   --Secundario: #d3e3fb;
 }
@@ -364,58 +364,42 @@ html {
   width: 100%;
 }
 
-body {
-  background: rgb(30,31,56);
-  background: -moz-linear-gradient(180deg, rgba(30,31,56,1) 0%, rgba(25,25,39,1) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(30,31,56,1) 0%, rgba(25,25,39,1) 100%);
-  background: linear-gradient(180deg, rgba(30,31,56,1) 0%, rgba(25,25,39,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1e1f38",endColorstr="#191927",GradientType=1);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-}
-
-/* Estilos globales de fuente */
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
-  color: white;
 }
 
-/* Estilos específicos para subtítulos, botones o palabras cortas */
+p,
+b,
+li,
+em,
+a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+b,
+em,
+button {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+}
+p,
+li {
+  font-size: 16px !important;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
-
-.SubTitulo {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin: auto;
-  width: 95%;
-  max-width: 1350px;
-  position: relative;
-  overflow: hidden;
-}
-.SubTitulo::after {
-  content: "";
-  position: absolute;
-  background-color: var(--Borde);
-  width: 100vw;
-  height: 2.5px;
-  z-index: -1;
-  bottom: 0;
-}
-.SubTitulo h2 {
-  color: white;
-  margin: 0 0 0 2%;
-  font-size: 28px;
-  padding: 5px 0;
+h3 {
+  font-size: 18px;
 }

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import SobreMiJSON from "../../utils/json/SobreMi.json";
+import Shape from "../../assets/shape/wave-haikei.svg";
 
 const Main = styled.section`
   display: flex;
@@ -47,20 +48,21 @@ const Imagen = styled.div`
     border-radius: 50%;
   }
 `;
-const FondoStyled = styled.div`
+const Contenedor_Styled = styled.div`
   padding-top: 15px;
   position: relative;
   width: 100%;
-  ::after {
-    content: "";
-    position: absolute;
-    height: 50%;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-    background-color: var(--Principal);
-  }
 `;
+const Background_Styled = styled.img`
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(180deg);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+`;
+
 const Contenedor_Data_Historia = styled.div`
   display: flex;
   flex-direction: column;
@@ -70,13 +72,15 @@ const Data = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin-bottom: 2.5px;
   b {
     color: black;
   }
-  p {
-    color: #464646;
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
+  em {
+    color: #5a5a5a;
+    font-size: 15px;
+
   }
 `;
 const Historia = styled.div`
@@ -95,20 +99,22 @@ const Sobre = () => {
             <Imagen>
               <img src={item.src} alt="" />
             </Imagen>
-            <FondoStyled>
+
+            <Contenedor_Styled>
+              <Background_Styled src={Shape} />
               <Perfil key={item.nombre}>
                 <Contenedor_Data_Historia>
                   <Data>
                     <b>{item.nombre}</b>
 
-                    <p>{item.puesto}</p>
+                    <em>{item.puesto}</em>
                   </Data>
                   <Historia>
                     <p>{item.desc}</p>
                   </Historia>
                 </Contenedor_Data_Historia>
               </Perfil>
-            </FondoStyled>
+            </Contenedor_Styled>
           </Contenedor>
         ))}
       </Main>

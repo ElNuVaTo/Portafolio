@@ -11,8 +11,8 @@ const Contenedor = styled.div`
   margin: auto;
   background-color: var(--Secundario);
   width: 95%;
-  max-width: 600px;
-  min-height: 165px;
+  max-width: 350px;
+  min-height: 155px;
   border-radius: 5px;
   padding: 15px 10px;
   gap: 10px;
@@ -31,12 +31,11 @@ const Enlace = styled.a`
     height: 20px;
   }
 `;
-const Nombre = styled.b`
+const Nombre = styled.h3`
   color: black;
-  font-size: 15.5px;
 `;
 
-const MapRenderCertificado = ({  name, href, desc }) => {
+const MapRenderCertificado = ({ name, href, desc }) => {
   return (
     <>
       <Contenedor>

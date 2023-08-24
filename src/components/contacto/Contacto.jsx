@@ -1,44 +1,68 @@
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 
-import TituloSection from "../../utils/TituloSection";
 import ContactoJSON from "../../utils/json/Contacto.json";
 import RenderContacto from "./RenderContacto";
-const Main = styled.div`
+
+const Main = styled.footer`
+  background-color: var(--Principal);
+  padding: 15px 1%;
+  h3 {
+    color: white;
+  }
+`;
+const Copyright = styled.p`
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  font-size: 14px !important;
+`;
+const Contenedor_Contacto = styled.div`
   display: flex;
   flex-direction: column;
-  width: 95%;
-  max-width: 1300px;
-  margin: auto;
+  padding-left: 5px;
+  gap: 10px;
 `;
-
 const Contenedor = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: start;
   flex-wrap: wrap;
-  margin: 20px auto;
-  gap: 20px 50px;
-  background-color: var(--Secundario);
-  padding: 5px 20px;
-  border-radius: 5px;
+  gap: 5px;
+  padding-left: 5px;
+  p,
+  a {
+    color: white;
+  }
 `;
 
 const Contacto = () => {
+  const [fecha, setFecha] = useState("");
+
+  useEffect(() => {
+    const year = new Date().getFullYear();
+
+    return setFecha(year);
+  }, []);
+
   return (
     <>
       <Main>
-        <TituloSection titulo="Contactame" />
-
-        <Contenedor>
-          {ContactoJSON.map((item) => (
-            <div key={item.data}>
-              <RenderContacto
-                src={item.src}
-                data={item.data}
-                href={item.href}
-              />
-            </div>
-          ))}
-        </Contenedor>
+        <Contenedor_Contacto>
+          <h3>Contacto</h3>
+          <Contenedor>
+            {ContactoJSON.map((item) => (
+              <div key={item.data}>
+                <RenderContacto
+                  src={item.src}
+                  data={item.data}
+                  href={item.href}
+                />
+              </div>
+            ))}
+          </Contenedor>
+        </Contenedor_Contacto>
+        <Copyright>Copyright © {fecha} Angelo. All Rights Reserved</Copyright>
       </Main>
     </>
   );

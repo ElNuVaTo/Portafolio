@@ -1,25 +1,21 @@
 [
   {
-    "name": "Fundamental",
+    "name": "¿Con que suelo programar?",
     "skills": [
       "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/Html.svg",
       "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/Css.svg",
       "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/JavaScript.svg",
-      "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/Git.svg"
-    ]
-  },
-  {
-    "name": "Dominado",
-    "skills": [
+      "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/Git.svg",
       "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/React.svg",
       "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/NextJS.svg"
     ]
   },
   {
-    "name": "Aprendiendo…",
+    "name": "Estoy aprendiendo",
     "skills": [
       "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/Figma.svg",
-      "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/TypeScript.svg"
+      "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/TypeScript.svg",
+      "https://portafolio-angelo-amaro.s3.sa-east-1.amazonaws.com/progamacion/icons8-amazon-web-services.svg"
     ]
   }
 ]
