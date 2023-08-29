@@ -9,9 +9,8 @@ const Contenedor = styled.div`
   width: 100%;
   max-width: 350px;
   height: 200px;
-  border-radius: 15px;
-  margin: auto;
-  h3 {
+  border-radius: 5px;
+  h4 {
     color: white;
   }
   gap: 10px;
@@ -42,7 +41,7 @@ const ImageHabilidad = ({ name, skills }) => {
   return (
     <>
       <Contenedor>
-        <h3>{name}</h3>
+        <h4>{name}</h4>
         <Contenedor_Image>
           {skills.map((item, key) => (
             <Image key={key}>

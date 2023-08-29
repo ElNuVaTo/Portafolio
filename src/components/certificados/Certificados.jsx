@@ -76,8 +76,8 @@ const Div = styled.div`
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  justify-content: space-evenly;
-  padding: 25px 0;
+  justify-content: space-between;
+  padding: 25px 2%;
   background-color: #242541;
   gap: 20px 15px;
 `;
@@ -95,10 +95,11 @@ const Certificados = () => {
         </WaveBottom>
 
         <Div>
-          <Image>
+        <Image>
             <img src={Shape} alt="" />
             <h2>Certificados</h2>
           </Image>
+
           <Contenedor>
             {CertificadosJSON.map((item) => (
               <>
@@ -110,6 +111,7 @@ const Certificados = () => {
               </>
             ))}
           </Contenedor>
+ 
         </Div>
       </Main>
     </>

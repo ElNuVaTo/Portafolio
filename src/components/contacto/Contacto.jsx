@@ -33,6 +33,8 @@ const Contenedor = styled.div`
   p,
   a {
     color: white;
+    font-family: var(--descripciones);
+    font-weight: 500;
   }
 `;
 

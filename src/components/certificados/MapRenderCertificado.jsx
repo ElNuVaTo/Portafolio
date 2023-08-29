@@ -17,10 +17,7 @@ const Contenedor = styled.div`
   padding: 15px 10px;
   gap: 10px;
 
-  p {
-    color: black;
-    font-size: 15px;
-  }
+ 
 `;
 const Enlace = styled.a`
   position: absolute;
@@ -31,7 +28,7 @@ const Enlace = styled.a`
     height: 20px;
   }
 `;
-const Nombre = styled.h3`
+const Nombre = styled.h4`
   color: black;
 `;
 

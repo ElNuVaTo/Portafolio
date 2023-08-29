@@ -50,9 +50,8 @@ const Descripcion = styled.div`
     color: black;
   }
 `;
-const Nombre = styled.h3`
-  color: black;
-  text-align: center;
+const Nombre = styled.h4`
+  
 `;
 const Habilidades = styled.ul`
   gap: 5px;
@@ -86,6 +85,11 @@ const Button = styled.button`
   padding: 5px 10px;
   width: 95px;
   font-size: 15px;
+
+  p {
+    font-weight: 500;
+  }
+  
 `;
 
 const MapRenderProyecto = ({ name, src, href, desc, skills }) => {
@@ -116,13 +120,13 @@ const MapRenderProyecto = ({ name, src, href, desc, skills }) => {
 
               <Habilidades>
                 {skills.map((item) => (
-                  <li key={item}>{item}</li>
+                  <li key={item}><p>{item}</p></li>
                 ))}
               </Habilidades>
             </Contenedor>
           )}
           <Button type="button" onClick={cambiarVisible}>
-            {visible ? "Volver" : "Leer mas"}
+            <p>{visible ? "Volver" : "Leer mas"}</p>
           </Button>
         </Informacion>
       </Main>

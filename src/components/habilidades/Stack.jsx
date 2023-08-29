@@ -7,16 +7,16 @@ const Main = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0  3%;
+  padding: 0 2%;
   margin: auto;
+  margin: 100px auto 150px auto;
 `;
 const Habilidades = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
   gap: 50px;
-  margin: 50px auto 150px auto;
 `;
 
 const Stack = () => {

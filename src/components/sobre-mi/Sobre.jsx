@@ -9,13 +9,13 @@ const Main = styled.section`
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 50px 0;
+  padding: 50px 2%;
   ::after {
     content: "";
     position: absolute;
-    height: 50%;
+    height: 55%;
     top: 0;
-    width: 100%;
+    width: 96%;
     z-index: -1;
     background-color: var(--Principal);
   }
@@ -24,12 +24,14 @@ const Contenedor = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 10px;
 `;
 const Perfil = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 8px 10px;
+  padding: 10px 15px;
+  gap: 10px;
   width: 90%;
   max-width: 600px;
   border-radius: 5px;
@@ -49,46 +51,40 @@ const Imagen = styled.div`
   }
 `;
 const Contenedor_Styled = styled.div`
-  padding-top: 15px;
   position: relative;
   width: 100%;
 `;
 const Background_Styled = styled.img`
-  top: 0;
+  top: 10px;
   position: absolute;
+  user-select: none;
   z-index: -1;
   transform: rotate(180deg);
   height: 100%;
   width: 100%;
   object-fit: cover;
 `;
-
 const Contenedor_Data_Historia = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 5px;
 `;
 const Data = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5px;
 
-  margin-bottom: 2.5px;
   b {
-    color: black;
+    color: #252525;
   }
-  em {
-    color: #5a5a5a;
-    font-size: 15px;
-
-  }
-`;
-const Historia = styled.div`
   p {
-    color: #2d2d2d;
+    font-weight: 500;
     font-size: 15.5px;
+    color: #434343;
+    font-style: italic;
   }
 `;
+const Historia = styled.div``;
 
 const Sobre = () => {
   return (
@@ -107,7 +103,7 @@ const Sobre = () => {
                   <Data>
                     <b>{item.nombre}</b>
 
-                    <em>{item.puesto}</em>
+                    <p>{item.puesto}</p>
                   </Data>
                   <Historia>
                     <p>{item.desc}</p>

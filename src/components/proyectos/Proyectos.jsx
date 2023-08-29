@@ -7,24 +7,24 @@ import MapRenderProyecto from "./MapRenderProyecto";
 import TituloSection from "../../utils/TituloSection";
 
 const Main = styled.div`
-   display: flex;
+  display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0 0 0 3%;
+  padding: 0 0 0 2%;
   margin: auto;
+
 `;
 const ContenedorDrag = styled(motion.div)`
   cursor: grab;
   overflow: hidden;
   margin: 35px auto;
   width: 100%;
-
 `;
 const Draggeable = styled(motion.ul)`
   display: flex;
   width: max-content;
   gap: 20px;
-  padding: 0 3% 0 0;
+  padding: 0 2% 0 0;
   li {
     width: 500px;
     list-style: none;
